@@ -2,8 +2,12 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import { DinoTour } from './dino-park.js';
 
 $(document).ready(function() {
+
+  let tour = new DinoTour
+
 $(".park").click(function(event){
   event.preventDefault();
   var xhr = new XMLHttpRequest();
@@ -17,5 +21,12 @@ $(".park").click(function(event){
     }
   };
   xhr.send();
+tour.visit();
+});
+$("#feed").click(function(event){
+  event.preventDefault();
+   tour.attack();
+  tour.feedDino();
+  tour.tourCheck();
 });
 });

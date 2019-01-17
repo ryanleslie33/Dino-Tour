@@ -1,8 +1,6 @@
-class DinoTour {
+export class DinoTour {
   constructor() {
-    this.dinosaur1 = this.dinosaur1;
-    this.dinosaur2 = this.dinosaur2;
-    this.dinosaur3 = this.dinosaur3;
+    this.dinosaur = this.dinosaur;
     this.cod = 1;
     this.tourStatus = "alive";
   }
@@ -18,27 +16,14 @@ danger(){
   }
 }
 
-visit1(){
-  this.dinosaur1 = this.dinosaur1;
+visit(){
+  this.dinosaur = this.dinosaur;
   this.danger();
   this.cod += 1
   this.trexAttack();
   this.tourCheck();
 }
-visit2(){
-  this.dinosaur2 = this.dinosaur2;
-  this.danger();
-  this.cod += 1
-  this.trexAttack();
-  this.tourCheck();
-}
-visit3(){
-  this.dinosaur3 =this.dinosaur3
-  this.danger();
-  this.cod += 1
-  this.trexAttack();
-  this.tourCheck();
-}
+
 tourCheck(){
 if (this.tourStatus === "dead"){
   console.log("It looks as if your tour has ended, lets check on some other tourists?")
@@ -56,4 +41,10 @@ trexAttack() {
     this.tourStatus = "dead";
   }
 }
+  attack() {
+    if ( this.cod > 20){
+      console.log("the dinosaur pulled you into the cage and ate you instead")
+    }
+  }
+
 }

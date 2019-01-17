@@ -11,8 +11,10 @@
     },
     "rules": {
         "semi": 1,
-        "indent": ["warn", 2],
+        "indent": ["off"],
         "no-console": "warn",
-        "no-debugger": "warn"
+        "no-debugger": "warn",
+        "no-unused-vars": "warn"
+
     }
 }
