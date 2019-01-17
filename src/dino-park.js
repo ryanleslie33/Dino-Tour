@@ -43,6 +43,7 @@ trexAttack() {
 }
   attack() {
     if ( this.cod > 20){
+      this.tourStatus = "dead"
       console.log("the dinosaur pulled you into the cage and ate you instead")
     }
   }
