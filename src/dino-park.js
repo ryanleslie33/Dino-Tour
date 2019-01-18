@@ -30,7 +30,7 @@ visit(){
 
 tourCheck(){
 if (this.tourStatus === "dead"){
-  this.flavorText = "It looks as if your tour has ended, lets check on some other tourists?"
+  this.flavorText = " oh no something went wrong the dinosaurs got out and attacked, you and your tour party are now dead, lets check on some other tourists?"
   this.cod = 1;
   this.tourStatus = "alive"
   }
@@ -46,7 +46,7 @@ trexAttack() {
   }
 }
   attack() {
-    if ( this.cod > 20){
+    if ( this.cod > 5){
 
       this.tourStatus = "dead"
       this.flavorText = "the dinosaur pulled you into the cage and ate you instead"

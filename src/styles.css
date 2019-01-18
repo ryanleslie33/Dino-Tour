@@ -4,3 +4,16 @@ body {
 #dinosaur1{
   font-weight: bold;
 }
+.park {
+  text-align: center;
+}
+.output{
+  text-align: center;
+  font-size: 30px;
+}
+#feed{
+  text-align: center;
+}
+#giphy{
+  text-align: center;
+}

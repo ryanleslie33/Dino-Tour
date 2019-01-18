@@ -30,7 +30,7 @@ $("#flavor-text").text(tour.flavorText).val();
 $("#feed").click(function(event){
   event.preventDefault();
   setInterval(() => {
-    if(tour.cod>=20){
+    if(tour.cod>=5){
       const species = "dinosuar";
 
       let request = new XMLHttpRequest();
